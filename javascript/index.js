@@ -20,11 +20,18 @@ function printTime() {
 }
 
 function printMinutes() {
-  // ... your code goes here
+  let min = chronometer.twoDigitsNumber(chronometer.getMinutes())
+  minDec.textContent=min.charAt(0)
+  minUni.textContent=min.charAt(1)
+  console.log(min)
 }
 
+
 function printSeconds() {
-  // ... your code goes here
+  let sec = chronometer.twoDigitsNumber(chronometer.getSeconds())
+  secDec.textContent=sec.charAt(0)
+  secUni.textContent=sec.charAt(1)
+  console.log(sec)
 }
 
 // ==> BONUS

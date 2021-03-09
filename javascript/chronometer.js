@@ -22,7 +22,7 @@ class Chronometer {
     if (num < 10) {
       return "0" + num;
     } else {
-      return toString(num);
+      return num.toString();
     }
   }
   stopClick() {
